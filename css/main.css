@@ -21,9 +21,11 @@ header div {
 }
 header div h1 a {
     font-size: 25px;
+    font-family: 'S-CoreDream-4Regular';
 }
 header div a {
     font-size: 20px;
+    font-family: 'S-CoreDream-4Regular';
 }
 
 /* .main_visual */
@@ -51,7 +53,7 @@ header div a {
     top: 0;
     transform: translateX(-50%);
     /* 변형 : 이동X축 -> 본인이 가진 너비의 반만큼 역으로 이동 */
-    color: #fff;
+    color: #015989;
 
     display: flex;
     flex-wrap: wrap;
@@ -60,19 +62,24 @@ header div a {
 .main_visual .title h2 {
     width: 100%;
     font-size: 60px;
+    font-family:'S-CoreDream-6Bold';;
 }
 .main_visual .title p {
     width: 100%;
     font-size: 30px;
+    font-family: 'S-CoreDream-4Regular';
     margin-bottom: 40px;
 }
 .main_visual .title a {
     color: #fff;
+    font-family: 'S-CoreDream-3Light';
     width: 150px;
     height: 50px;
     line-height: 50px;
-    background-color: royalblue;
+    background-color: #009dc8;
     text-align: center;
+    display: block;
+    border-radius: 0 20px;
 }
 
 /* .best_v */
@@ -85,10 +92,14 @@ header div a {
     margin-bottom: 40px;
 }
 .best_v .title h3 {
-    font-size: 40px;
+    font-size: 45px;
+    font-family: 'S-CoreDream-6Bold';
+    color: #015989;
 }
 .best_v .title p {
     font-size: 20px;
+    font-family: 'S-CoreDream-4Regular';
+    color: #009dc8;
 }
 .best_v .cont {
     width: 1280px;
@@ -124,9 +135,16 @@ header div a {
 .best_v .cont .info {
     width: 45%;
 }
+.best_v .cont .info strong {
+    font-family: 'S-CoreDream-3Light';
+}
 .best_v .cont .info h4 {
     font-size: 30px;
+    font-family: 'S-CoreDream-3Light';
     margin-bottom: 5px;
+}
+.best_v .cont .info p {
+    font-family: 'S-CoreDream-3Light';
 }
 .best_v .cont .info p:nth-of-type(2) {
     /* 외부여백 위20px 아래 40px */
@@ -135,10 +153,12 @@ header div a {
 .best_v .cont .info dl {
     display: flex;
     margin-bottom: 10px;
+    font-family: 'S-CoreDream-3Light';
 }
 .best_v .cont .info dl dt {
     font-weight: bold;
     width: 100px;
+    font-family: 'S-CoreDream-3Light';
 }
 .best_v .cont .info ul {
     display: flex;
@@ -146,16 +166,17 @@ header div a {
 .best_v .cont .info ul li a {
     height: 45px;
     line-height: 45px;
-    border: 1px solid royalblue;
+    border: 1px solid #009dc8;
     box-sizing: border-box;
     /* 테두리 : 1px 직선 색상 */
     /* 테두리를 포함해서 높이(45px)가 잡힐 수 있도록 설정 */
     display: block;
     padding: 0 25px;
-    margin-right: 10px;    
+    margin-right: 10px;
+    font-family: 'S-CoreDream-3Light';    
 }
 .best_v .cont .info ul li:nth-child(1) a {
-    background-color: royalblue;
+    background-color: #009dc8;
     color: #fff;
 } 
 
@@ -169,9 +190,13 @@ header div a {
 }
 .motion .title h3 {
     font-size: 45px;
+    font-family: 'S-CoreDream-6Bold';
+    color: #015989;
 }
 .motion .title p {
     font-size: 20px;
+    font-family: 'S-CoreDream-4Regular';
+    color: #009dc8;
 }
 .motion .list {
     display: flex;
@@ -182,15 +207,16 @@ header div a {
     cursor: pointer;
     height: 45px;
     line-height: 45px;
-    border: 1px solid #333;
+    border: 1px solid #fad000;
     padding: 0 30px;
     margin: 0 5px;
     box-sizing: border-box;
+    font-family: 'S-CoreDream-3Light';
 }
 .motion .list li.on {
-    box-shadow: 2px 3px 15px rgba(255, 0, 0, 0.4);
+    box-shadow: 2px 3px 15px #fad000a9;
     /* 그림자 : x축 y축 블러 색상 */
-    background-color: red;
+    background-color: #fad000;
     color: #fff;
     border: 0;
 }
@@ -206,7 +232,7 @@ header div a {
 }
 .motion .motion_cont .list_cont .items {
     width: 49%;
-    border: 1px solid #ccc;
+    border: 1px solid #fad000;
     box-sizing: border-box;
 }
 /* 유튜브 영상 크기 조절 */
@@ -229,9 +255,11 @@ header div a {
 
 .motion .list_cont .items .info {
     padding: 30px;
+    font-family: 'S-CoreDream-3Light';
 }
 .motion .list_cont .items .info h4 {
     font-size:  30px;
+    font-family: 'S-CoreDream-4Regular';
     margin-bottom: 20px;
 }
 .motion .list_cont .items .info dl {
@@ -248,7 +276,7 @@ header div a {
 
 /* .g_ver05 */
 .g_ver05 {
-    background-color: #eee;
+    background-color: #fad000;
     padding: 100px 0;
 }
 .g_ver05 .title {
@@ -258,12 +286,17 @@ header div a {
 }
 .g_ver05 .title h3 {
     font-size: 45px;
+    font-family: 'S-CoreDream-6Bold';
+    color: #015989;
 }
 .g_ver05 .title p {
     font-size: 20px;
+    font-family: 'S-CoreDream-4Regular';
+    color: #009dc8;
 }
 .g_ver05 .title em {
     font-size: 13px;
+    font-family: 'S-CoreDream-3Light';
     text-align: right;    
     margin-top: 40px;
     margin-bottom: 10px;
@@ -310,10 +343,12 @@ header div a {
 .g_ver05 .cont .items .info p {
     /* 글자크기 : 14px */
     font-size: 14px;
+    font-family: 'S-CoreDream-3Light';
 }
 .g_ver05 .cont .items .info h4 {    
     /* 다른 컨텐츠에 있는 h4크기와 동일하게 작성 */
     font-size: 30px;
+    font-family: 'S-CoreDream-3Light';
 }
 
 /* .about */
@@ -349,32 +384,40 @@ header div a {
 }
 .about .cont .info div h4 {
     font-size: 30px;
+    font-family: 'S-CoreDream-4Regular';
     margin-bottom: 20px;
 }
 .about .cont .info div p {
     font-size: 20px;
+    font-family: 'S-CoreDream-3Light';
     margin-bottom: 5px;
 }
 .about .cont .info div dl dt {
     margin-bottom: 5px;
     font-size: 20px;
+    font-family: 'S-CoreDream-3Light';
     font-weight: bold;        
 }
 .about .cont .info div dl dd {
     font-size: 20px;
+    font-family: 'S-CoreDream-3Light';
 }
 
 footer {
-    background-color: #333;
+    background-color: #7b90a1;
     text-align: center;
     color: #fff;
     padding: 100px 0;
+}
+footer h3 {
+    font-family: 'S-CoreDream-4Regular';
 }
 footer ul li {
     width: 280px;
     height: 50px;
     line-height: 50px;
     border: 1px solid white;
+    font-family: 'S-CoreDream-3Light';
     border-radius: 50px;
     margin: 10px auto;
     /* 가로 : 280px
@@ -384,9 +427,9 @@ footer ul li {
     모서리곡선 : 50px
     외부여백 : 위아래 10px 좌우 자동 */
 }
-footer ul li a {color: #fff;}
+footer ul li a {color: #fff;font-family: 'S-CoreDream-3Light';}
 footer ul li:first-child {
-    background-color: royalblue;
+    background-color: #009dc8;
     font-weight: bold;
 }
 footer ul li:first-child a {
@@ -395,5 +438,6 @@ footer ul li:first-child a {
 footer p {
     margin-top: 20px;
     font-size: 14px;
+    font-family: 'S-CoreDream-3Light';
     color: rgba(255, 255, 255, 0.5);
 }
