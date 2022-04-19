@@ -7,6 +7,13 @@
     <title>신수현 포트폴리오</title>
     <!-- 팬시박스 css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" integrity="sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- animate.css -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <!-- aos css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <link href="css/main.css" rel="stylesheet" />
 
@@ -14,7 +21,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- 팬시박스js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
+    <!-- aos js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         $(function(){
             //탭메뉴
@@ -25,9 +33,29 @@
                 $('.motion .list_cont').removeClass('on');
                 $('.motion .list_cont').eq($(this).index()).addClass('on');
             });//click end
+            AOS.init();
         });
     </script> 
-    
+    <style>
+        @font-face {
+     font-family: 'S-CoreDream-4Regular';
+     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-4Regular.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+}
+        @font-face {
+     font-family: 'S-CoreDream-3Light';
+     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+}
+        @font-face {
+     font-family: 'S-CoreDream-6Bold';
+     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-6Bold.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+}
+    </style>
 </head>
 <body>
     <header>
@@ -40,35 +68,37 @@
     </header>
     <section class="main_visual">
         <figure>
-            <img src="https://via.placeholder.com/1920x1000/333/333/?text=image" />
+            <img src="images/노랑_09.jpg" >
         </figure>
         <div class="title">
+            <div class="animate__animated animate__slideInUp">
             <h2>MOTION GRAPHIC DESINGER</h2>
             <p>SHIN SU HYEON</p>
             <a href="https://youtube.com/channel/UCkA0TFKvKtAXpS6h_VnckeA">유튜브채널</a>
+        </div>
         </div><!-- .title end -->
     </section><!-- .main_visual end -->
     
     <section class="best_v">
         <div class="title">
-            <h3>BEST VIDEO EDITING</h3>
-            <p>내가 뽑은 베스트 작품</p>
+            <h3>PORTFOLIO REEL</h3>
+            <p>2021.12~2022.05</p>
         </div><!-- .title end -->
         <div class="cont">
             <div class="youtube">
-                <div class="youtube_in">
+                <div class="youtube_in" data-aos="fade-left">
                     <!-- 유튜브 연결 -->
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/ZS0kH47kk2w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div><!-- .youtube_in end -->
             </div><!-- .youtube end -->
-            <div class="info">
-                <strong>#브이로그</strong>
-                <h4>영상제목넣기</h4>
-                <p>편집, 촬영, 연출, 디자인, 특수효과 / 모작</p>
-                <p>제작목적, 컨셉트 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, tempore pariatur in ad cum ab assumenda harum perspiciatis dignissimos, vero, maxime illo laboriosam tenetur. Expedita tempora voluptatum veritatis molestias doloribus.</p>
+            <div class="info" data-aos="fade-right">
+                <strong>#포트폴리오 #릴영상</strong>
+                <h4>2022 Portfolio REEL</h4>
+                <p>편집, 촬영, 연출, 디자인, 특수효과</p>
+                <p>2022년 상반기 동안 작업했던 포트폴리오를 모아서 만든 릴 영상입니다.</p>
                 <dl>
                     <dt>프로그램</dt>
-                    <dd>일러스트레이터, 프리미어 프로, 에프터이펙트</dd>
+                    <dd>Premiere Pro, After Effects, Photoshop, Illustrator, Maya</dd>
                 </dl>
                 <dl>
                     <dt>배경음악</dt>
@@ -96,14 +126,13 @@
             <p>비디오, 애니메이션 기술을 이용한 영상제작</p>
         </div><!-- .title end -->
         <ul class="list">
-            <li class="on">게임</li>
-            <li>홍보영상</li>
-            <li>인포그래픽</li>
+            <li class="on">인포그래픽</li>
+            <li>홍보영상</li>            
             <li>브이로그</li>
-            <li>뮤비티저</li>
+            <li>3D그래픽</li>
         </ul><!-- .list end -->
         <div class="motion_cont">
-            <div class="list_cont on"><!-- 게임 -->
+            <div class="list_cont on"><!-- 모션그래픽 -->
                 <div class="items">
                     <div class="youtube">
                         <div class="youtube_in">
@@ -165,7 +194,7 @@
                         </dl>
                     </div><!-- .info end -->
                 </div><!-- .items end 2 -->
-            </div><!-- .list_cont end 게임 -->
+            </div><!-- .list_cont end 모션그래픽 -->
 
             <div class="list_cont"><!-- 홍보영상 -->
                 <div class="items">
@@ -248,7 +277,7 @@
                 </figure>
                 <div class="info">
                     <p>#보정 / 포토샵</p>
-                    <h4>제작된 이미지 제목</h4>
+                    <h4>이미지 제목</h4>
                 </div><!-- .info end -->
             </a><!-- .items end 1 -->
 
@@ -258,7 +287,7 @@
                 </figure>
                 <div class="info">
                     <p>#보정 / 포토샵</p>
-                    <h4>제작된 이미지 제목</h4>
+                    <h4>이미지 제목</h4>
                 </div><!-- .info end -->
             </a><!-- .items end 2 -->
 
@@ -273,7 +302,7 @@
             <div class="info">
                 <div>
                     <h4>PROFILE</h4>
-                    <p>이름 / name</p>
+                    <p>신수현</p>
                     <p>1900.00.00</p>
                     <p><a href="tel:010-6484-8212">010.6484.8212</a></p>
                     <p>부산광역시 연제구</p>
@@ -295,22 +324,21 @@
                 </div>
                 <div>
                     <h4>SKILL</h4>
-                    <p>프리미어프로, 에프터이펙트, 0000</p>
-                    <p>포토샵, 일러스트레이터, XD, 0000 </p>
+                    <p>Premiere Pro, After Effects</p>
+                    <p>Photoshop, Illustrator</p>
                     <p>HTML, CSS</p>
-                    <p>추가 할 부분</p>
+                    <p>Maya</p>
                 </div>
             </div><!-- .info -->
         </div><!-- .cont end -->
     </section><!-- .about end -->
 
     <footer>
-        <h3>신수현 SHINSUHYEON</h3>
+        <h3>SHIN SU HYEON</h3>
         <ul>
-            <li><a href="https://youtube.com/channel/UCkA0TFKvKtAXpS6h_VnckeA">유튜브채널</a></li>
+            <li><a href="https://youtube.com/channel/UCkA0TFKvKtAXpS6h_VnckeA">유튜브채널 바로가기</a></li>
             <li><a href="tel:010-6484-8212">010.6484.8212</a></li>
-            <li>카카오아이디 : assd</li>
-            <li>이메일주소</li>
+            <li>sjo0519@naver.com</li>
         </ul>
         <p>copyright 2022. 신수현 all rights reserved.<br />
         본 사이트는 개인 포트폴리오 사이트로 제작되어 상업적 목적이 아닙니다. 사용된 일부 이미지 및 폰트 등은 별도의 출처가 있음을 밝혀 드립니다.</p>
