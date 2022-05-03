@@ -26,7 +26,7 @@ header div h1 a {
 header div a {
     font-size: 20px;
     font-family: 'S-CoreDream-4Regular';
-    display: flex; align-items: center; justify-content: center; /* ??? */
+     /* ??? */
 }
 
 /* .main_visual */
