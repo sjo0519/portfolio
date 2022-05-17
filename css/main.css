@@ -312,13 +312,16 @@ header div a {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .g_ver05 .cont .items {
     width: 49%;
     background-color: #fff;
     display: flex;    
     align-items: center;
-    /* 한줄일 때 수직정렬 : 가운데 */    
+    /* 한줄일 때 수직정렬 : 가운데 */  
+    margin-bottom: 20px;  
+    
 }
 .g_ver05 .cont .items figure {
     width: 60%;
